@@ -12,16 +12,16 @@
 
 /* ── Tokens ── */
 :root {
-  --bg:          #0c1a0e;
-  --card:        #162b19;
-  --card-hover:  #1e3822;
-  --border:      rgba(72, 120, 60, 0.3);
-  --border-hover:rgba(140, 190, 100, 0.55);
-  --text:        #a8c490;
-  --text-bright: #dff0c8;
-  --text-muted:  #5a8050;
-  --badge-bg:    #1a3a1c;
-  --badge-border:rgba(72, 120, 60, 0.4);
+  --bg:          #00a8e8;
+  --card:        #0077aa;
+  --card-hover:  #005f80;
+  --border:      rgba(0, 40, 70, 0.3);
+  --border-hover:rgba(0, 20, 50, 0.55);
+  --text:        #d6f0ff;
+  --text-bright: #d6f0ff;
+  --text-muted:  #7ab8d8;
+  --badge-bg:    #002535;
+  --badge-border:rgba(0, 40, 70, 0.4);
   --radius:      16px;
   --max-w:       900px;
 }
@@ -45,7 +45,7 @@ h1, h2, h3 {
   color: var(--text-bright);
 }
 
-strong { color: var(--text-bright); font-weight: 500; }
+strong { color: #ffffff; font-weight: 700; }
 
 /* ── Layout ── */
 .container {
@@ -126,9 +126,9 @@ strong { color: var(--text-bright); font-weight: 500; }
 }
 
 .section-sub {
-  color: var(--text-muted);
+  color: var(--text);
   font-size: 0.9rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.25rem;
 }
 
 /* ── Projects ── */
@@ -337,7 +337,7 @@ strong { color: var(--text-bright); font-weight: 500; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  margin-top: 2.5rem;
+  margin-top: 1.25rem;
 }
 
 .skill-label {
@@ -346,7 +346,7 @@ strong { color: var(--text-bright); font-weight: 500; }
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: #a8d8f0;
   margin-bottom: 1rem;
 }
 
@@ -385,11 +385,11 @@ footer {
   align-items: center;
   justify-content: space-between;
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--text);
 }
 
 .back-top {
-  color: var(--text-muted);
+  color: var(--text);
   text-decoration: none;
   font-size: 0.8rem;
   transition: color 0.2s;
