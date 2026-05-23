@@ -204,11 +204,10 @@ strong { color: #ffffff; font-weight: 700; }
 }
 
 .card-logo {
-  height: 36px !important;
-  width: auto !important;
-  max-width: 130px !important;
+  height: 60px;
+  width: auto;
+  max-width: 200px;
   object-fit: contain;
-  display: block;
   flex-shrink: 0;
 }
 
