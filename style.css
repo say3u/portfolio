@@ -59,10 +59,6 @@ strong { color: #ffffff; font-weight: 700; }
 .section { padding: 7rem 0; }
 
 /* ── Hero ── */
-#projects {
-  min-height: 70vh;
-}
-
 #hero {
   min-height: 100vh;
   display: flex;
@@ -139,17 +135,31 @@ strong { color: #ffffff; font-weight: 700; }
 .section-toggle {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
   cursor: pointer;
   width: fit-content;
+  padding: 0.5rem 0.9rem;
+  margin-left: -0.9rem;
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.section-toggle:hover {
+  background: var(--card);
 }
 
 .section-toggle-arrow {
   color: var(--text-bright);
-  font-size: 1.8rem;
+  display: inline-flex;
+  align-items: center;
   transition: transform 0.3s ease, color 0.2s ease;
-  display: inline-block;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateY(-1px);
+  margin-top: -3px;
+}
+
+.section-toggle-arrow svg {
+  width: 22px;
+  height: 22px;
 }
 
 .section-toggle:hover .section-toggle-arrow {
@@ -157,7 +167,16 @@ strong { color: #ffffff; font-weight: 700; }
 }
 
 .section-toggle.collapsed .section-toggle-arrow {
-  transform: rotate(0deg);
+  transform: rotate(0deg) translateY(-1px);
+}
+
+.section-toggle-hint {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-left: 0.15rem;
 }
 
 /* ── Projects ── */
@@ -166,7 +185,7 @@ strong { color: #ffffff; font-weight: 700; }
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 3rem;
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
   position: relative;
   max-height: 8000px;
   overflow: hidden;
