@@ -59,6 +59,10 @@ strong { color: #ffffff; font-weight: 700; }
 .section { padding: 7rem 0; }
 
 /* ── Hero ── */
+#projects {
+  min-height: 70vh;
+}
+
 #hero {
   min-height: 100vh;
   display: flex;
@@ -141,14 +145,19 @@ strong { color: #ffffff; font-weight: 700; }
 }
 
 .section-toggle-arrow {
-  color: var(--text-muted);
-  font-size: 1.3rem;
-  transition: transform 0.3s ease;
+  color: var(--text-bright);
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.2s ease;
   display: inline-block;
+  transform: rotate(90deg);
+}
+
+.section-toggle:hover .section-toggle-arrow {
+  color: #ffffff;
 }
 
 .section-toggle.collapsed .section-toggle-arrow {
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 
 /* ── Projects ── */
