@@ -1,3 +1,13 @@
+// Section pull-down (Projects / Websites)
+document.querySelectorAll('.section-toggle').forEach(toggle => {
+  const target = document.getElementById(toggle.dataset.target);
+  if (!target) return;
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('collapsed');
+    target.classList.toggle('collapsed');
+  });
+});
+
 // Card click-to-expand
 document.querySelectorAll('.project-card').forEach(card => {
   card.addEventListener('click', e => {
